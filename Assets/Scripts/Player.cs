@@ -16,14 +16,14 @@ public class Player : MonoBehaviour
     public Text score;
     public static int count = 0;
     public Transform GroundCheck;
-    private float y;
+    Object bulletref;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        y = transform.position.y;
+        bulletref = Resources.Load("Prefabs/Bullet");
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             Isgrounded = false;
             animator.Play("Jump");
         }
-
+ 
         if (Input.GetKeyDown(KeyCode.Space) && Isgrounded == true)
         {
             rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpspeed);
@@ -63,7 +63,12 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if(Isgrounded)
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                GameObject bullet = (GameObject)Instantiate (bulletref);
+                bullet.transform.position = new Vector2(transform.position.x + 0.4f, transform.position.y + 0.4f);
+            }
+            else if (Isgrounded)
                 animator.Play("Idle");
             rigidBody2D.velocity = new Vector2(0, rigidBody2D.velocity.y);
         }
@@ -71,14 +76,6 @@ public class Player : MonoBehaviour
         score.text ="Score: " + count.ToString();
     }
 
-    private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
-    {
-        if (collision.gameObject.tag == "GameController")
-        {
-            Debug.Log("YES");
-            y = y + jumpspeed * Time.deltaTime;
-        }
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Trigger")

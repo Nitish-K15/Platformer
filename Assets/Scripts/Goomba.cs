@@ -33,5 +33,13 @@ public class Goomba : MonoBehaviour
             speed = speed * -1;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+            Player.count++;
+        }
+    }
 
 }
