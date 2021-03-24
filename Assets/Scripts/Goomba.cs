@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Goomba : MonoBehaviour
@@ -20,6 +21,7 @@ public class Goomba : MonoBehaviour
         rg2d.velocity = new Vector2(speed, rg2d.velocity.y);
         if (isStomp == true)
         {
+            Player.count++; 
             Destroy(gameObject);
         }
     }

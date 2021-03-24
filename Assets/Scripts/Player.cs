@@ -1,21 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
     Animator animator;
-    public int speed = 3;
-    public int jumpspeed = 3;
+    private float speed = 4f;
+    private float jumpspeed = 5f;
     private bool Isgrounded = true;
     private Rigidbody2D rigidBody2D;
     private SpriteRenderer spriteRenderer;
+    public Text score;
+    public static int count = 0;
+    public Transform GroundCheck;
+    private float y;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        y = transform.position.y;
     }
 
     // Update is called once per frame
@@ -23,43 +31,60 @@ public class Player : MonoBehaviour
     {
         var h = Input.GetAxis("Horizontal");
         rigidBody2D.velocity = new Vector2(h * speed, rigidBody2D.velocity.y);
+        if (Physics2D.Linecast(transform.position, GroundCheck.position, 1 << LayerMask.NameToLayer("Ground")))
+        {
+            Isgrounded = true;
+        }
+        else
+        {
+            Isgrounded = false;
+            animator.Play("Jump");
+        }
 
-        if(Input.GetKeyDown(KeyCode.Space) && Isgrounded == true )
+        if (Input.GetKeyDown(KeyCode.Space) && Isgrounded == true)
         {
             rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, jumpspeed);
+            animator.Play("Jump");
         }
 
-        if (h < 0)
+        if ((h < 0))
         {
             //transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * -1, transform.localScale.y, transform.localScale.z);
-            //animator.Play("Run");
+            if(Isgrounded)
+                animator.Play("Run");
             spriteRenderer.flipX = true;
         }
-        else if(h > 0)
+        else if ((h > 0)) 
         {
             //transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * 1, transform.localScale.y, transform.localScale.z);
+            if(Isgrounded)
+                animator.Play("Run");
             spriteRenderer.flipX = false;
         }
+        else
+        {
+            if(Isgrounded)
+                animator.Play("Idle");
+            rigidBody2D.velocity = new Vector2(0, rigidBody2D.velocity.y);
+        }
+
+        score.text ="Score: " + count.ToString();
     }
-   /* private bool isGrounded()
+
+    private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
-        return Isgrounded();
-    }*/
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Base")
-            Isgrounded = true;
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Base")
-            Isgrounded = false;
+        if (collision.gameObject.tag == "GameController")
+        {
+            Debug.Log("YES");
+            y = y + jumpspeed * Time.deltaTime;
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Trigger")
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
