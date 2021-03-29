@@ -12,10 +12,14 @@ public class Special : MonoBehaviour
     private Vector2 originalPosition;
     private bool canBounce = true;
     public Sprite Blank;
+    public bool hasFlower = false;
+    public AudioClip[] clips = new AudioClip[2];
+    private AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
         originalPosition = transform.localPosition;
+        source = GetComponent<AudioSource>();
     }
     public void BlockBounce()
     {
@@ -32,15 +36,34 @@ public class Special : MonoBehaviour
     }
     void PresentCoin()
     {
+        source.clip = clips[1];
+        source.Play();
         GameObject coin = (GameObject)Instantiate (Resources.Load("Prefabs/Coin", typeof(GameObject)));
         coin.transform.SetParent(this.transform.parent);
         coin.transform.localPosition = new Vector2(originalPosition.x, originalPosition.y + 1);
         StartCoroutine(MoveCoin(coin));
     }
+
+    void PresentFlower()
+    {
+        source.clip = clips[0];
+        source.Play();
+        GameObject flower = (GameObject)Instantiate(Resources.Load("Prefabs/Flower", typeof(GameObject)));
+        flower.transform.SetParent(this.transform.parent);
+        flower.transform.localPosition = new Vector2(originalPosition.x, originalPosition.y + 0.45f);
+    }
+
     IEnumerator Bounce()
     {
         ChangeSprite();
-        PresentCoin();
+        if (hasFlower == false)
+        {
+            PresentCoin();
+        }
+        else
+        {
+            Invoke("PresentFlower", 0.3f);
+        }
         while(true)
         {
             transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + bounceSpeed * Time.deltaTime);

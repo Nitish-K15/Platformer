@@ -8,6 +8,10 @@ TagManager:
   - Trigger
   - GroundCheck
   - Bullet
+  - Boundary
+  - Wall
+  - PowerUp
+  - Collectible
   layers:
   - Default
   - TransparentFX

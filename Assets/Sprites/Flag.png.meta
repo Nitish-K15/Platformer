@@ -1,49 +1,40 @@
 fileFormatVersion: 2
-guid: 24bf807529fa50444a5cf9b2318d8e43
+guid: 1ac2a533f573d1744b44f718c2a37ccc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6107226860257003755
-    second: _FF Mario Sprites_0
+      213: 1805158079502305607
+    second: Flag_0
   - first:
-      213: -1517744383673917210
-    second: _FF Mario Sprites_1
+      213: -477789389410734736
+    second: Flag_1
   - first:
-      213: 6663517044942607000
-    second: _FF Mario Sprites_2
+      213: -8119871676797884261
+    second: Flag_2
   - first:
-      213: -1498748556643749567
-    second: _FF Mario Sprites_3
+      213: 5006722515616286978
+    second: Flag_3
   - first:
-      213: -7873776503880592776
-    second: _FF Mario Sprites_4
+      213: -1620801062248390355
+    second: Flag_4
   - first:
-      213: -3362052171183223962
-    second: _FF Mario Sprites_5
+      213: -6821687374815711783
+    second: Flag_5
   - first:
-      213: 2111944518488347213
-    second: _FF Mario Sprites_6
+      213: 9203530336585976052
+    second: Flag_6
   - first:
-      213: -2659344843009528179
-    second: _FF Mario Sprites_7
+      213: -5498009112885732322
+    second: Flag_7
   - first:
-      213: 8909310063998009366
-    second: _FF Mario Sprites_8
+      213: 7483883601491041384
+    second: Flag_8
   - first:
-      213: 8955116052132173147
-    second: _FF Mario Sprites_9
+      213: -4077365112243052297
+    second: Flag_9
   - first:
-      213: -1526667678177048082
-    second: _FF Mario Sprites_10
-  - first:
-      213: -814553250446354885
-    second: _FF Mario Sprites_11
-  - first:
-      213: 3896229049341197893
-    second: _FF Mario Sprites_12
-  - first:
-      213: 3024552706988312419
-    second: _FF Mario Sprites_13
+      213: -1076038790263142589
+    second: Flag_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,295 +136,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _FF Mario Sprites_0
+      name: Flag_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 244
-        width: 16
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51738af2785ce3ba0800000000000000
-      internalID: -6107226860257003755
+      spriteID: 749492c85b53d0910800000000000000
+      internalID: 1805158079502305607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_1
+      name: Flag_1
       rect:
         serializedVersion: 2
-        x: 147
-        y: 244
-        width: 16
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 74
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e0a54f3683efeae0800000000000000
-      internalID: -1517744383673917210
+      spriteID: 07de8bee41d8e59f0800000000000000
+      internalID: -477789389410734736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_2
+      name: Flag_2
       rect:
         serializedVersion: 2
-        x: 166
-        y: 244
-        width: 16
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 148
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89290929271997c50800000000000000
-      internalID: 6663517044942607000
+      spriteID: b98e4ba1bbb605f80800000000000000
+      internalID: -8119871676797884261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_3
+      name: Flag_3
       rect:
         serializedVersion: 2
-        x: 184
-        y: 244
-        width: 14
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 222
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141be91e020633be0800000000000000
-      internalID: -1498748556643749567
+      spriteID: 2094248e9937b7540800000000000000
+      internalID: 5006722515616286978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_4
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 244
-        width: 16
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 872516d9cf9bab290800000000000000
-      internalID: -7873776503880592776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _FF Mario Sprites_5
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 244
-        width: 16
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66b0b4cfc579751d0800000000000000
-      internalID: -3362052171183223962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _FF Mario Sprites_6
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 244
-        width: 16
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d42d4d999522f4d10800000000000000
-      internalID: 2111944518488347213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _FF Mario Sprites_7
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 244
-        width: 16
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8e662184fb181bd0800000000000000
-      internalID: -2659344843009528179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _FF Mario Sprites_8
-      rect:
-        serializedVersion: 2
-        x: 277
-        y: 244
-        width: 16
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6100a66bc4a34ab70800000000000000
-      internalID: 8909310063998009366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _FF Mario Sprites_9
+      name: Flag_4
       rect:
         serializedVersion: 2
         x: 296
-        y: 244
-        width: 16
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b559cb96a96f64c70800000000000000
-      internalID: 8955116052132173147
+      spriteID: d21eb117502c189e0800000000000000
+      internalID: -1620801062248390355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_10
+      name: Flag_5
       rect:
         serializedVersion: 2
-        x: 315
-        y: 244
-        width: 14
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 370
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee9cf28d5df20dae0800000000000000
-      internalID: -1526667678177048082
+      spriteID: 9dda757b97f7451a0800000000000000
+      internalID: -6821687374815711783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_11
+      name: Flag_6
       rect:
         serializedVersion: 2
-        x: 331
-        y: 244
-        width: 16
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 444
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b365188622022b4f0800000000000000
-      internalID: -814553250446354885
+      spriteID: 4f80db7241289bf70800000000000000
+      internalID: 9203530336585976052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_12
+      name: Flag_7
       rect:
         serializedVersion: 2
-        x: 350
-        y: 244
-        width: 16
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 518
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54e3a816daf221630800000000000000
-      internalID: 3896229049341197893
+      spriteID: e1cd59e67d523b3b0800000000000000
+      internalID: -5498009112885732322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _FF Mario Sprites_13
+      name: Flag_8
       rect:
         serializedVersion: 2
-        x: 369
-        y: 244
-        width: 16
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 592
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3670c7889ae59f920800000000000000
-      internalID: 3024552706988312419
+      spriteID: 86c9e37fb781cd760800000000000000
+      internalID: 7483883601491041384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flag_9
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0ae21880a4a67c0800000000000000
+      internalID: -4077365112243052297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flag_10
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 0
+        width: 74
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34703dddb642111f0800000000000000
+      internalID: -1076038790263142589
       vertices: []
       indices: 
       edges: []

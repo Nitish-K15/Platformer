@@ -10,12 +10,4 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    private void Update()
-    {
-        Player.count = 0;
-        if (Input.GetKey(KeyCode.Return))
-            SceneManager.LoadScene("Game");
-        if (Input.GetKey(KeyCode.M))
-            SceneManager.LoadScene("Main Menu");
-    }
 }

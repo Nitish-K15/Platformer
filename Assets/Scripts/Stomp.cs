@@ -12,7 +12,8 @@ public class Stomp : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            transform.root.gameObject.GetComponent<Goomba>().isStomp = true;
+            //transform.root.gameObject.GetComponent<Goomba>().isStomp = true;
+            GetComponentInParent<Goomba>().DeadEnemy();
         }
     }
 }
