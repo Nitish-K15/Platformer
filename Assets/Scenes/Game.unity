@@ -1508,7 +1508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195948277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.43, y: -3.84, z: 0}
+  m_LocalPosition: {x: -9.28, y: -4.09, z: 0}
   m_LocalScale: {x: 3.5, y: 3, z: 1}
   m_Children:
   - {fileID: 2120300627}
@@ -2016,7 +2016,7 @@ GameObject:
   - component: {fileID: 293918174}
   m_Layer: 0
   m_Name: Goomba
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2166,7 +2166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!1 &306333484
 GameObject:
@@ -4115,7 +4114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -4762,7 +4761,7 @@ GameObject:
   - component: {fileID: 775087184}
   m_Layer: 0
   m_Name: Koopa (2)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5400,7 +5399,7 @@ GameObject:
   - component: {fileID: 917767236}
   m_Layer: 0
   m_Name: Koopa (1)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6578,7 +6577,7 @@ GameObject:
   - component: {fileID: 1184201264}
   m_Layer: 0
   m_Name: Goomba (7)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6595,7 +6594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &1184201265
 BoxCollider2D:
@@ -9594,7 +9592,7 @@ GameObject:
   - component: {fileID: 1637866505}
   m_Layer: 0
   m_Name: Goomba (5)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9611,7 +9609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &1637866506
 BoxCollider2D:
@@ -9996,7 +9993,7 @@ GameObject:
   - component: {fileID: 1661720252}
   m_Layer: 0
   m_Name: Goomba (8)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10013,7 +10010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &1661720253
 BoxCollider2D:
@@ -10633,7 +10629,7 @@ GameObject:
   - component: {fileID: 1743636964}
   m_Layer: 0
   m_Name: Goomba (2)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10650,7 +10646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &1743636965
 BoxCollider2D:
@@ -12327,7 +12322,7 @@ GameObject:
   - component: {fileID: 1851893463}
   m_Layer: 0
   m_Name: Goomba (4)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12344,7 +12339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &1851893464
 BoxCollider2D:
@@ -12569,7 +12563,7 @@ GameObject:
   - component: {fileID: 1908843820}
   m_Layer: 0
   m_Name: Goomba (1)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12586,7 +12580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &1908843821
 BoxCollider2D:
@@ -12819,7 +12812,7 @@ GameObject:
   - component: {fileID: 1941601407}
   m_Layer: 0
   m_Name: Koopa
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13097,7 +13090,7 @@ GameObject:
   - component: {fileID: 2008788989}
   m_Layer: 0
   m_Name: Goomba (6)
-  m_TagString: Trigger
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13114,7 +13107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f7dd020e9e5cc45bb6a8ff905169d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStomp: 0
   Dead: {fileID: 5353402365513778652, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
 --- !u!61 &2008788990
 BoxCollider2D:
