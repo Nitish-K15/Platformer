@@ -9,7 +9,6 @@ public class Goomba : MonoBehaviour
 {
     // Start is called before the first frame update
     private Rigidbody2D rg2d;
-    public Boolean isStomp = false;
     int speed = 1;
     public Sprite Dead;
     void Start()
@@ -21,14 +20,9 @@ public class Goomba : MonoBehaviour
     void Update()
     {
         rg2d.velocity = new Vector2(speed, rg2d.velocity.y);
-        /*if (isStomp == true)
-        {
-            Player.count++; 
-            Destroy(gameObject);
-        }*/
     }
 
-    public void DeadEnemy()
+    public void DeadEnemy()                                             //Change Sprite to stomped 
     {
         GetComponent<Animator>().enabled = false;
         GetComponent<SpriteRenderer>().sprite = Dead;
@@ -52,6 +46,7 @@ public class Goomba : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bullet")
         {
+            Destroy(collision.gameObject);
             Destroy(gameObject);
             Player.count++;
         }

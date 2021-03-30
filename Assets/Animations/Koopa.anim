@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shoot
+  m_Name: Koopa
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2905628457997800625, guid: e9a12ae942505f84bbd51fdb09def39f,
+      value: {fileID: -4202195862769392742, guid: eae7a643401ec1e47a41dd591b87e342,
         type: 3}
-    - time: 0.083333336
-      value: {fileID: -2905628457997800625, guid: e9a12ae942505f84bbd51fdb09def39f,
+    - time: 0.2
+      value: {fileID: 5479164114704339306, guid: eae7a643401ec1e47a41dd591b87e342,
+        type: 3}
+    - time: 0.4
+      value: {fileID: -4202195862769392742, guid: eae7a643401ec1e47a41dd591b87e342,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 60
+  m_SampleRate: 25
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -44,14 +47,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2905628457997800625, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
-    - {fileID: -2905628457997800625, guid: e9a12ae942505f84bbd51fdb09def39f, type: 3}
+    - {fileID: -4202195862769392742, guid: eae7a643401ec1e47a41dd591b87e342, type: 3}
+    - {fileID: 5479164114704339306, guid: eae7a643401ec1e47a41dd591b87e342, type: 3}
+    - {fileID: -4202195862769392742, guid: eae7a643401ec1e47a41dd591b87e342, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.1
+    m_StopTime: 0.44
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

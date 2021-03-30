@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    Rigidbody2D rgbd;
-   
-    // Start is called before the first frame update
     void Start()
     {
-        rgbd = GetComponent<Rigidbody2D>();
-        Invoke("DestroySelf", 1f);
+        Invoke("DestroySelf", 1f);  //Destroy Bullet after set time
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    public void StartShoot(bool FacingLeft)
     {
-            rgbd.velocity = new Vector2(5f, rgbd.velocity.y);
+        Rigidbody2D rgbd = GetComponent<Rigidbody2D>();
+        if (FacingLeft)                                    //Check to spawn bullets in the correct direction
+        {
+            rgbd.velocity = new Vector2(-3, 0);
+        }
+        else
+        {
+            rgbd.velocity = new Vector2(3, 0);
+        }
     }
     private void DestroySelf()
     {
@@ -25,7 +28,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "EditorOnly")   //Destroy Bullets if they touch a wall or fall of map
             Destroy(gameObject);
     }
 }

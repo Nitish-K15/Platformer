@@ -12,29 +12,31 @@ public class Special : MonoBehaviour
     private Vector2 originalPosition;
     private bool canBounce = true;
     public Sprite Blank;
-    public bool hasFlower = false;
+    public bool hasFlower = false;    //Checks if Box has flower or coin
+    public int coinCount = 1;        //Number of coins in abox
     public AudioClip[] clips = new AudioClip[2];
     private AudioSource source;
-    // Start is called before the first frame update
     void Start()
     {
         originalPosition = transform.localPosition;
         source = GetComponent<AudioSource>();
     }
-    public void BlockBounce()
+    public void BlockBounce()            
     {
         if(canBounce)
         {
-            canBounce = false;
+            if(coinCount == 1)
+                canBounce = false;
             StartCoroutine(Bounce());
+            coinCount--;
         }
     }
-    public void ChangeSprite()
+    public void ChangeSprite()               //Changes Block to empty after bouncing
     {
         GetComponent<Animator>().enabled = false;
         GetComponent<SpriteRenderer>().sprite = Blank;
     }
-    void PresentCoin()
+    void PresentCoin()                      //Instantiate coin if box has coin
     {
         source.clip = clips[1];
         source.Play();
@@ -44,7 +46,7 @@ public class Special : MonoBehaviour
         StartCoroutine(MoveCoin(coin));
     }
 
-    void PresentFlower()
+    void PresentFlower()                  //Instantiate flower if hasFlower is true
     {
         source.clip = clips[0];
         source.Play();
@@ -53,15 +55,17 @@ public class Special : MonoBehaviour
         flower.transform.localPosition = new Vector2(originalPosition.x, originalPosition.y + 0.45f);
     }
 
-    IEnumerator Bounce()
+    IEnumerator Bounce()                  //Coroutine to bounce the block
     {
-        ChangeSprite();
         if (hasFlower == false)
         {
             PresentCoin();
+            if (coinCount == 1)
+                ChangeSprite();
         }
         else
         {
+            ChangeSprite();
             Invoke("PresentFlower", 0.3f);
         }
         while(true)
@@ -84,7 +88,7 @@ public class Special : MonoBehaviour
         }
     }
 
-    IEnumerator MoveCoin(GameObject coin)
+    IEnumerator MoveCoin(GameObject coin)         //Coroutine to move the coin after spawning
     {
         while(true)
         {

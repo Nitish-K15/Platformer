@@ -12,8 +12,8 @@ public class End : MonoBehaviour
     private void Start()
     {
         source = GetComponent<AudioSource>();
-        if (finish == false)
-        {
+        if (finish == false)                                        //Check to see if its Win screen or GameOver screen
+        {                                                           //Play audio accordingly
             source.clip = clips[0];
             source.Play();
         }
@@ -28,12 +28,12 @@ public class End : MonoBehaviour
         Player.count = 0;
         if (Input.GetKey(KeyCode.Return))
         {
-            if (finish)
+            if (finish)                                                        //From Win screen to Main Menu 
                 SceneManager.LoadScene("Main Menu");
             else
-                SceneManager.LoadScene("Game");
+                SceneManager.LoadScene("Game");                                
         }
         if (Input.GetKey(KeyCode.M) && finish == false)
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Main Menu");                              //From GameOver screen to Main Menu
     }
 }

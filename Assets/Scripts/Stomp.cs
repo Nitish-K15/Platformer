@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Stomp : MonoBehaviour
 {
-    private void Start()
-    {
-        
-    }
+    public bool isKoopa = false;          //Check to see if box is applied to Koopa or Goomba
+    
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            //transform.root.gameObject.GetComponent<Goomba>().isStomp = true;
-            GetComponentInParent<Goomba>().DeadEnemy();
+            if (isKoopa == true)
+            {
+                GetComponentInParent<Koopa>().DeadEnemy();
+                GetComponentInParent<Koopa>().isStomp = true;
+                Destroy(gameObject);
+            }
+            else
+                GetComponentInParent<Goomba>().DeadEnemy();
         }
     }
 }
